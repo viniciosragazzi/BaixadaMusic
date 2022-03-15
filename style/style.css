@@ -27,6 +27,9 @@ body {
   font-family: "Poppins", sans-serif;
   width: 100%;
 }
+body.hidden {
+  overflow: hidden !important;
+}
 body .flex {
   display: flex;
   align-items: center;

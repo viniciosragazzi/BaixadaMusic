@@ -25,6 +25,9 @@
   body {
     font-family: "Poppins", sans-serif;
     width: 100%;
+    &.hidden{
+      overflow: hidden !important;
+    }
     .flex {
       display: flex;
       align-items: center;
@@ -84,8 +87,7 @@
         a {
           font-size: 2rem;
           font-weight: 600;
-          &.logo-text {
-          }
+        
         }
       }
       .navbar-iconArea {
