@@ -17,3 +17,29 @@
  })
 
 })()
+
+
+
+
+
+
+
+function changeImg(){
+    const imgTag = document.querySelector('.imgSec')
+    let img = 1
+   setInterval(()=>{
+       if(img ==1 ){
+           img= 2
+       }else{
+           img = 1
+       }
+    imgTag.setAttribute('src', `./assets/img/musico${img}.png`) 
+    imgTag.style.opacity= '0'
+
+    setInterval(()=>{
+        imgTag.style.opacity= '1'
+    },500)
+   }, 6000)
+
+}
+changeImg()
